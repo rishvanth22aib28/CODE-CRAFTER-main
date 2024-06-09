@@ -66,7 +66,3 @@ test_input = np.array([float(i) for i in test_input.split(',')]).reshape(1, -1)
 if st.button('Test Neural Network'):
     output = nn.forward_pass(test_input)
     st.write(f'Output: {output[0][0]}')
-
-# Run the Streamlit app
-if __name__ == '__main__':
-    st.run()
